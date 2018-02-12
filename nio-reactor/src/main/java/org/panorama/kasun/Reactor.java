@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-public class Reactor {
+public class Reactor { // [tzl]: nio based reactor pattern
     private Map<Integer, EventHandler> registeredHandlers = new ConcurrentHashMap<Integer, EventHandler>();
     private Selector demultiplexer;
 
